@@ -1,11 +1,20 @@
 <div *ngIf="hero">
-
+  
     <h2>{{hero.name | uppercase}} Details</h2>
     <div><span>id: </span>{{hero.id}}</div>
     <div>
       <label>name:
         <input [(ngModel)]="hero.name" placeholder="name"/>
       </label>
+      <h1>
+        Coches en venta
+      </h1>
+      <p>
+        Este es un coche marca: {{coche.marca}}
+      </p> 
+      <p>
+        Modelo: {{coche.modelo}}
+      </p>
     </div>
-  
+    <button (click)="goBack()">go back</button>
   </div>
